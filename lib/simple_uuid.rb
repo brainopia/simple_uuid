@@ -25,6 +25,7 @@ module SimpleUUID
       when self.class # UUID
         @bytes = bytes.to_s
       when String
+        bytes = bytes.b
         case bytes.size
         when 16 # Raw byte array
           @bytes = bytes
